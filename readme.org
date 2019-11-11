@@ -1,0 +1,6 @@
+Load extension from the `build` folder. Manifest has correct shape for extension.
+
+Do `npm run watch` to live reload your changes.
+
+TODO: Add Remote Redux Devtools
+
