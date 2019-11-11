@@ -1,12 +1,20 @@
 import React from "react";
-import logo from "./logo.svg";
+import { useSelector, useDispatch } from "react-redux";
+
 import "./App.css";
 
 function App() {
+  const dispatch = useDispatch();
+  const message = useSelector(state => state.test);
+  const handleClick = () =>
+    dispatch({ type: "UPDATE_MESSAGE", payload: "updated message!" });
+
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Live reload</h1>
+        <h2>Redux DevTools with Live Reload</h2>
+        <p>{message}</p>
+        <button onClick={handleClick}>Click me</button>
       </header>
     </div>
   );

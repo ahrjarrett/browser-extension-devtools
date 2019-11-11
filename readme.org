@@ -1,6 +1,24 @@
-Load extension from the `build` folder. Manifest has correct shape for extension.
+Load extension from the ~build~ folder (might have to run watch first).
 
-Do `npm run watch` to live reload your changes.
+Manifest in ~public~ directory has correct shape for extension, and is where you can configure your app.
 
-TODO: Add Remote Redux Devtools
+Built with CRA without ejecting, which is still feasible
+
+* Instructions
+
+Do ~npm run watch~ to live reload your changes.
+
+On any webpage:
+1. Open the extension popup from the extensions bar
+1. Right click and do 'Inspect' (so extension doesn't close btwn loads)
+1. Right click again and open 'Open Remote DevTools '
+1. The best way I've found to refresh is to open the DevTools you opened and hit Cmd/Ctrl+R (there is probably an option that forces refresh for you, but haven't read all those docs yet)
+
+[[./docs/example.png]]
+
+
+*** Todos
+  - [x] Add Remote Redux Devtools
+  - [ ] Flesh out skeleton project to be something actually useful
+
 
