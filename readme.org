@@ -1,6 +1,9 @@
-Load extension from the `build` folder. Manifest has correct shape for extension.
+Load extension from the ~build~ folder. Manifest has correct shape for extension.
 
-Do `npm run watch` to live reload your changes.
+Do ~npm run watch~ to live reload your changes.
+
+Resource: https://mmazzarolo.com/blog/2019-10-19-browser-extension-development/
 
 TODO: Add Remote Redux Devtools
+
 
